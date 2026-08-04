@@ -188,7 +188,7 @@
   .explain b{color:var(--navy);}
 
   .spacer{flex:1;}
-  .footer-nav{margin-top:auto;padding-top:8px;}
+  .footer-nav{margin-top:auto;padding-top:8px;position:sticky;bottom:0;background:var(--bg);padding-bottom:14px;box-shadow:0 -8px 12px -4px rgba(15,23,42,.06);}
 
   .result-num{font-size:44px;font-weight:800;color:var(--navy);text-align:center;margin:6px 0;}
   .result-grid{display:flex;gap:10px;margin:18px 0;}
@@ -323,6 +323,7 @@
     </div>
     <div class="footer-nav">
       <button class="btn" onclick="App.nextMistake()" id="mistakeNextBtn">Далее</button>
+      <button class="btn ghost" onclick="App.exitTest()">Выход</button>
     </div>
   </div>
 
